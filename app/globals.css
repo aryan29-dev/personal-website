@@ -1,26 +1,48 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+:root{
+  --bg: #050B1A;
+  --bg2:#07122b;
+  --card:#0b1b3f;
+  --blue:#3b82f6;
+  --blue2:#60a5fa;
+  --text:#eaf2ff;
+  --muted:#b7c8ff;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html { scroll-behavior: smooth; }
+
+body{
+  background: radial-gradient(1200px 600px at 20% 0%, rgba(59,130,246,.25), transparent 60%),
+              radial-gradient(900px 600px at 90% 20%, rgba(96,165,250,.18), transparent 60%),
+              linear-gradient(180deg, var(--bg), var(--bg2));
+  color: var(--text);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Subtle “sports texture” overlay */
+.sports-texture{
+  background-image:
+    radial-gradient(circle at 25% 20%, rgba(255,255,255,.08) 1px, transparent 1px),
+    radial-gradient(circle at 75% 60%, rgba(255,255,255,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255,255,255,.03) 1px, transparent 1px);
+  background-size: 140px 140px, 180px 180px, 80px 80px, 80px 80px;
+  background-position: 0 0, 20px 30px, 0 0, 0 0;
+  pointer-events: none;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.section-card{
+  background: rgba(11,27,63,.55);
+  border: 1px solid rgba(96,165,250,.18);
+  backdrop-filter: blur(10px);
+}
+
+.nav-pill{
+  border: 1px solid rgba(96,165,250,.25);
+  background: rgba(5,11,26,.35);
+}
+.nav-pill:hover{
+  background: rgba(59,130,246,.15);
 }
