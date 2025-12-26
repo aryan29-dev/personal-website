@@ -1,48 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  --bg: #050B1A;
-  --bg2:#07122b;
-  --card:#0b1b3f;
-  --blue:#3b82f6;
-  --blue2:#60a5fa;
-  --text:#eaf2ff;
-  --muted:#b7c8ff;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
-html { scroll-behavior: smooth; }
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
 
-body{
-  background: radial-gradient(1200px 600px at 20% 0%, rgba(59,130,246,.25), transparent 60%),
-              radial-gradient(900px 600px at 90% 20%, rgba(96,165,250,.18), transparent 60%),
-              linear-gradient(180deg, var(--bg), var(--bg2));
-  color: var(--text);
+.dm-sans {
+  font-family: 'DM Sans', sans-serif;
 }
 
-/* Subtle “sports texture” overlay */
-.sports-texture{
-  background-image:
-    radial-gradient(circle at 25% 20%, rgba(255,255,255,.08) 1px, transparent 1px),
-    radial-gradient(circle at 75% 60%, rgba(255,255,255,.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(255,255,255,.03) 1px, transparent 1px);
-  background-size: 140px 140px, 180px 180px, 80px 80px, 80px 80px;
-  background-position: 0 0, 20px 30px, 0 0, 0 0;
-  pointer-events: none;
+.jakarta {
+  font-family: 'Plus Jakarta Display', sans-serif;
 }
 
-.section-card{
-  background: rgba(11,27,63,.55);
-  border: 1px solid rgba(96,165,250,.18);
-  backdrop-filter: blur(10px);
+.poppins {
+  font-family: 'Poppins', sans-serif;
 }
 
-.nav-pill{
-  border: 1px solid rgba(96,165,250,.25);
-  background: rgba(5,11,26,.35);
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
 }
-.nav-pill:hover{
-  background: rgba(59,130,246,.15);
+
+.icons-wrapper {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-size {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-name {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.icons-wrapper-1 {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.icon-container-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-size-1 {
+  width: 30px;
+  height: 30px;
+}
+
+.icon-size-2 {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-size-contact {
+  width: 30px;
+  height: 30px;
 }
