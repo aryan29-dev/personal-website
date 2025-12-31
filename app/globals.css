@@ -4,7 +4,6 @@
 
 @import "tailwindcss";
 
-/* smooth scrolling for #about links etc */
 html {
   scroll-behavior: smooth;
 }
@@ -18,13 +17,6 @@ body {
   --background: #eaf2ff;
   --foreground: #171717;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
 
 .dm-sans {
   font-family: 'DM Sans', sans-serif;
@@ -93,9 +85,4 @@ body {
 .icon-size-contact {
   width: 30px;
   height: 30px;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
 }

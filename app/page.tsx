@@ -1,11 +1,11 @@
 "use client";
 
 import Navbar from "../components/Navbar";
-import Image from "next/image";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import Footer from "../components/Footer";
 
 function Highlight({
     children,
@@ -30,31 +30,8 @@ export default function Home() {
         <>
             <Navbar />
             <main className="mx-auto max-w-6xl px-6">
-                {/* HERO */}
                 <section className="pt-24 pb-32 sm:pb-40">
                     <div className="relative mx-auto max-w-6xl px-6">
-                        <div
-                            className="pointer-events-none absolute right-6 top-[95px] block"
-                        >
-                            <div className="relative w-[320px] h-[180px]">
-                                <Image
-                                    src="/sports/basketball.png"
-                                    alt="Basketball"
-                                    width={225}
-                                    height={200}
-                                    className="absolute left-30 top-0 rotate-[12deg] opacity-95 shadow-2xl rounded-xl"
-                                />
-                                <Image
-                                    src="/sports/baseball.png"
-                                    alt="Baseball"
-                                    width={200}
-                                    height={150}
-                                    className="absolute right-20 top-[145px] rotate-[-10deg] opacity-95 shadow-2xl rounded-xl"
-                                />
-                            </div>
-                        </div>
-
-
                         <h1 className="text-5xl sm:text-7xl font-black tracking-tight leading-[0.95] text-zinc-900">
                             “Hard work beats talent when talent doesn't work hard.” {" "}
                             <Highlight rotate="-3deg">- Tim Notke</Highlight>
@@ -109,6 +86,7 @@ export default function Home() {
                 <Experience />
                 <Projects />
                 <Contact />
+                <Footer />
 
             </main>
         </>

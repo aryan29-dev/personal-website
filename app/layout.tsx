@@ -1,25 +1,21 @@
 import "./globals.css";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+import { Titillium_Web } from "next/font/google";
+
+const f1 = Titillium_Web({
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "900"],
+  variable: "--font-f1",
+});
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${f1.variable} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
-
-export const metadata = {
-  title: "Aryan Singh",
-  description: "Personal Website",
-};
-
-export const viewport = {
-  width: "device-width",
-  initialScale: 1,
-};
 
 

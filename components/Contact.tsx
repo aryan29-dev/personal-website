@@ -1,18 +1,81 @@
+import { Mail, Linkedin, Github, FileText } from "lucide-react";
 
 export default function Contact() {
-  return (
-    <section id="contact" className="py-28 border-t border-zinc-200">
-      <h2 className="text-3xl font-black mb-6">Contact</h2>
-      <p className="text-lg text-zinc-700 mb-6">
-        Open to opportunities and conversations.
-      </p>
+    return (
+        <section id="contact" className="py-28 border-t border-zinc-200">
+            <div className="mb-16">
+                <div className="inline-flex items-center gap-3">
+                    <span className="inline-block h-2 w-10 rounded-full bg-zinc-900" />
+                    <h2
+                        className="font-black uppercase tracking-[0.28em] text-zinc-900 text-3xl sm:text-4xl"
+                        style={{
+                            fontFamily:
+                                "ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial",
+                        }}
+                    >
+                        CONTACT
+                    </h2>
+                </div>
+            </div>
 
-      <a
-        href="mailto:aryan@email.com"
-        className="inline-block rounded-full bg-zinc-900 text-white px-8 py-4 font-semibold hover:bg-zinc-700 transition"
-      >
-        Email Me
-      </a>
-    </section>
-  );
+            <div className="grid gap-12 sm:grid-cols-2 items-center">
+                <div className="space-y-10 text-zinc-900">
+                    <a
+                        href="mailto:a923sing@uwaterloo.ca"
+                        className="group flex items-center gap-5 hover:opacity-80 transition"
+                    >
+                        <Mail className="h-7 w-7" />
+                        <span className="font-f1 text-2xl tracking-wide">
+                            a923sing@uwaterloo.ca
+                        </span>
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/aryan-singh29/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group flex items-center gap-5 hover:opacity-80 transition"
+                    >
+                        <Linkedin className="h-7 w-7" />
+                        <span className="font-f1 text-2xl tracking-wide">
+                            aryan-singh29
+                        </span>
+                    </a>
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        className="group flex items-center gap-5 hover:opacity-80 transition"
+                    >
+                        <FileText className="h-7 w-7" />
+                        <span className="font-f1 text-2xl tracking-wide">
+                            Resume
+                        </span>
+                    </a>
+
+                    <a
+                        href="https://github.com/aryan29-dev"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group flex items-center gap-5 hover:opacity-80 transition"
+                    >
+                        <Github className="h-7 w-7" />
+                        <span className="font-f1 text-2xl tracking-wide">
+                            aryan29-dev
+                        </span>
+                    </a>
+                </div>
+                
+                <div className="flex justify-center sm:justify-end">
+                    <div className="border-[5px] border-zinc-900 p-2">
+                        <img
+                            src="/profile.jpg"
+                            alt="Aryan Singh"
+                            className="w-80 h-80 sm:w-96 sm:h-96 object-cover"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
 }
