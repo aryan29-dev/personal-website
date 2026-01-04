@@ -68,12 +68,14 @@ export default function Contact() {
                 </div>
 
                 <div className="flex justify-center sm:justify-end">
-                    <div className="border-[5px] border-zinc-900 p-2">
+                    <div className="relative rounded-2xl bg-white p-4 shadow-2xl">
+                        <div className="absolute inset-0 rounded-2xl border border-zinc-900/20" />
                         <img
-                            src="/profile.jpg"
+                            src="/profile.jpeg"
                             alt="Aryan Singh"
-                            className="w-80 h-80 sm:w-96 sm:h-96 object-cover"
+                            className="relative w-80 h-80 sm:w-96 sm:h-96 rounded-xl object-cover object-[50%_15%]"
                         />
+
                     </div>
                 </div>
             </div>
