@@ -17,21 +17,20 @@ const projects: Project[] = [
         tech: ["Python", "pandas", "NumPy", "yfinance", "Jupyter Notebook"],
         note: "Portfolio Optimization Challenge @ UWaterloo",
     },
-
-    {
-        title: "Baller (Basketball Roster Manager) 🏀",
-        description:
-            "A Java-based basketball roster app that supports adding/removing players, sorting, and searching using ArrayLists. Built to practice core DSA logic with clean UI output.",
-        href: "https://github.com/aryan29-dev/Baller",
-        tech: ["Java", "ArrayLists", "OOP", "Algorithms"],
-        note: "OOP & Algorithmic Design",
-    },
     {
         title: "Portfolio Risk Engine 📈",
         description:
             "A Python-based portfolio analysis engine that uses Monte Carlo simulation to evaluate risk and optimize portfolio performance. Simulates thousands of portfolios over the time period to determine the best risk-return trade-off (i.e. highest Sharpe ratio).",
         href: "https://github.com/aryan29-dev/Portfolio-Risk-Engine",
-        tech: ["Python", "NumPy", "pandas", "Matplotlib", "Monte Carlo Simulation", "Financial Risk Analysis"],
+        tech: ["Python", "NumPy", "pandas", "Matplotlib", "yfinance","Monte Carlo Simulation", "Financial Risk Analysis"],
+        note: "SWE/Finance Orientated Project",
+    },
+    {
+        title: "Equity Trend Analyzer 📉📈",
+        description:
+            "This project is a simple Streamlit web app that analyzes an equity’s price action using real historical market data (yfinance API). It calculates key risk/return metrics, determines the trend direction using linear regression, shows MA (moving average) signals, and optionally displays RSI (14) — all in a one-page dashboard with a CSV download.",
+        href: "https://github.com/aryan29-dev/Equity-Trend-Analyzer",
+        tech: ["Python", "NumPy", "pandas", "Matplotlib", "yfinance", "Streamlit"],
         note: "SWE/Finance Orientated Project",
     },
     {
@@ -41,6 +40,14 @@ const projects: Project[] = [
         href: "https://github.com/aryan29-dev/personal-website",
         tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
         note: "This website!",
+    },
+    {
+        title: "Baller (Basketball Roster Manager) 🏀",
+        description:
+            "A Java-based basketball roster app that supports adding/removing players, sorting, and searching using ArrayLists. Built to practice core DSA logic with clean UI output.",
+        href: "https://github.com/aryan29-dev/Baller",
+        tech: ["Java", "ArrayLists", "OOP", "Algorithms"],
+        note: "OOP & Algorithmic Design",
     },
     {
         title: "Mini Python Projects 🐍",
