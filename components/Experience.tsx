@@ -58,14 +58,14 @@ export default function Experience() {
                                     Managed{" "}
                                     <strong className={bulletStrong}>unit operations</strong>{" "} during peak operating periods, coordinating{" "}
                                     <strong className={bulletStrong}>team operations</strong>,{" "} and resolving issues{" "}
-                                    <strong className={bulletStrong}>in real time</strong>{" "} to maintain service continuity.
+                                    in real time to maintain service continuity.
                                 </p>
                             </li>
 
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
                                 <p className={bulletText}>
-                                    Took on a role as a{" "}
+                                    Embraced the role of a{" "}
                                     <strong className={bulletStrong}>team lead</strong>{" "} by{" "}
                                     <strong className={bulletStrong}>distributing responsibilities</strong>,{" "} prioritizing tasks, and adapting operations in a{" "}
                                     <strong className={bulletStrong}>fast-paced environment</strong>.

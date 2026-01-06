@@ -34,10 +34,10 @@ export default function Home() {
                     <div className="mx-auto w-full max-w-5xl px-5 sm:px-8">
                         <div className="relative mx-auto max-w-6xl px-6">
                             <h1 className="font-black text-zinc-900 tracking-tight leading-tight text-[clamp(2.75rem,6vw,4.75rem)]">                                
-                                “Hard work beats talent when talent doesn't work hard.”
+                                I <Highlight rotate="-3deg">design</Highlight> with vision and <Highlight rotate="-3deg">code</Highlight> with purpose.
                             </h1>
                             <p className="mt-4 font-black italic text-zinc-900 text-2xl sm:text-3xl md:text-4xl">
-                                <Highlight rotate="-3deg">- Tim Notke</Highlight>
+                                Built through consistency.
                             </p>
 
                             <p className="mt-6 text-xl text-black-700 max-w-2xl">
