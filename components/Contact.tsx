@@ -73,7 +73,7 @@ export default function Contact() {
                         <img
                             src="/profile.jpeg"
                             alt="Aryan Singh"
-                            className="relative w-80 h-80 sm:w-96 sm:h-96 rounded-xl object-cover object-[50%_15%]"
+                            className="relative w-80 h-80 sm:w-96 sm:h-100 rounded-xl object-cover object-[50%_15%]"
                         />
 
                     </div>
