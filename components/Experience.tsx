@@ -42,7 +42,7 @@ export default function Experience() {
                                     rel="noopener noreferrer"
                                     className="hover:underline cursor-pointer"
                                 >
-                                    Canada&apos;s Wonderland
+                                    Canada's Wonderland
                                 </a>
                             </h3>
                         </div>
@@ -75,9 +75,12 @@ export default function Experience() {
                                     <strong className={bulletStrong}>
                                         unit and team operations
                                     </strong>{" "}
-                                    during peak periods and resolved operational issues in real
-                                    time to prevent service delays and maintain service
-                                    continuity.
+                                    during peak periods, resolving real-time operational issues to
+                                    maintain service continuity across{" "}
+                                    <strong className={bulletStrong}>
+                                        5–10 associates
+                                    </strong>{" "}
+                                    per shift.
                                 </p>
                             </li>
 
@@ -86,21 +89,21 @@ export default function Experience() {
                                 <p className={bulletText}>
                                     Led{" "}
                                     <strong className={bulletStrong}>
-                                        unit and team operations
+                                        team operations
                                     </strong>{" "}
-                                    by{" "}
+                                    by prioritizing responsibilities and supporting efficient{" "}
                                     <strong className={bulletStrong}>
-                                        distributing responsibilities
-                                    </strong>
-                                    , prioritizing tasks, and improving service efficiency and
-                                    staff coordination in a{" "}
+                                        front-line operations
+                                    </strong>{" "}
+                                    for{" "}
                                     <strong className={bulletStrong}>
-                                        fast-paced environment
-                                    </strong>
-                                    .
+                                        hundreds of guests per shift
+                                    </strong>{" "}
+                                    in a fast-paced environment.
                                 </p>
                             </li>
                         </ul>
+
                     </div>
 
                     <span className="text-sm font-semibold text-zinc-500 sm:whitespace-nowrap">
@@ -130,35 +133,34 @@ export default function Experience() {
                                 | Brampton Christian School
                             </h3>
                         </div>
-
                         <ul className="mt-4 space-y-3">
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
                                 <p className={bulletText}>
                                     Collaborated within a{" "}
                                     <strong className={bulletStrong}>cross-functional team</strong>{" "}
+                                    of{" "}
+                                    <strong className={bulletStrong}>15+ members</strong>{" "}
                                     to plan and execute a{" "}
                                     <strong className={bulletStrong}>
                                         community infrastructure project
                                     </strong>{" "}
-                                    under fixed timelines, limited resources, and logistical
-                                    constraints, meeting all project deadlines.
+                                    under fixed timelines and logistical constraints, meeting all project deadlines.
                                 </p>
                             </li>
 
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
                                 <p className={bulletText}>
-                                    Managed{" "}
-                                    <strong className={bulletStrong}>
-                                        resources, materials, and on-site execution
-                                    </strong>{" "}
+                                    Managed resources, materials, and{" "}
+                                    <strong className={bulletStrong}>on-site execution</strong>{" "}
                                     to support the construction of a{" "}
                                     <strong className={bulletStrong}>
                                         fully functional cow shelter
                                     </strong>{" "}
                                     in partnership with{" "}
-                                    <strong className={bulletStrong}>Shelter Them</strong>.
+                                    <strong className={bulletStrong}>Shelter Them</strong>, contributing to
+                                    project completion under limited resources.
                                 </p>
                             </li>
 
@@ -169,11 +171,11 @@ export default function Experience() {
                                     <strong className={bulletStrong}>
                                         fundraising and budget allocation initiatives
                                     </strong>
-                                    , ensuring project completion despite{" "}
+                                    , coordinating financial planning to support on-time project completion
+                                    under{" "}
                                     <strong className={bulletStrong}>
-                                        funding and resource constraints
-                                    </strong>
-                                    .
+                                        limited funding resources
+                                    </strong>.
                                 </p>
                             </li>
                         </ul>
