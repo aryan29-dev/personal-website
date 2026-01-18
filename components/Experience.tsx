@@ -20,51 +20,84 @@ export default function Experience() {
                 </div>
 
                 <p className="mt-4 max-w-2xl text-lg text-black-700 leading-relaxed">
-                    A summary of my professional experiences and the skills I’ve developed through part-time work, academics, and projects!
+                    A summary of my professional experiences and the skills I’ve developed
+                    through part-time work, academics, and projects!
                 </p>
             </div>
 
             <div className="space-y-14 max-w-4xl">
-                {/* ROLE 1 */}
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
                     <div className="min-w-0">
-                        <h3 className="text-xl font-semibold text-zinc-900">
-                            Food & Beverage Service Associate ·{" "}
-                            <a
-                                href="https://www.sixflags.com/canadaswonderland"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="hover:underline cursor-pointer"
-                            >
-                                Canada's Wonderland
-                            </a>
-                        </h3>
+                        <div className="flex items-center gap-3">
+                            <img
+                                src="/canadas-wonderland.png"
+                                alt="Canada's Wonderland"
+                                className="h-6 w-6 rounded-md object-contain opacity-80"
+                            />
+                            <h3 className="text-xl font-semibold text-zinc-900">
+                                Food &amp; Beverage Service Associate ·{" "}
+                                <a
+                                    href="https://www.sixflags.com/canadaswonderland"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:underline cursor-pointer"
+                                >
+                                    Canada&apos;s Wonderland
+                                </a>
+                            </h3>
+                        </div>
 
                         <ul className="mt-4 space-y-3">
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
                                 <p className={bulletText}>
                                     Processed{" "}
-                                    <strong className={bulletStrong}>300+ high-volume financial transactions</strong>{" "} using{" "}
-                                    <strong className={bulletStrong}>Oracle POS</strong>{" "} systems, maintaining{" "}
-                                    <strong className={bulletStrong}>95–99% transaction accuracy</strong>{" "} and{" "}
-                                    <strong className={bulletStrong}>audit-level accountability</strong>{" "} during peak operating hours.
+                                    <strong className={bulletStrong}>
+                                        300+ high-volume financial transactions
+                                    </strong>{" "}
+                                    using <strong className={bulletStrong}>Oracle POS</strong>{" "}
+                                    systems, maintaining{" "}
+                                    <strong className={bulletStrong}>
+                                        95–99% transaction accuracy
+                                    </strong>{" "}
+                                    and{" "}
+                                    <strong className={bulletStrong}>
+                                        audit-level accountability
+                                    </strong>{" "}
+                                    during peak operating hours.
                                 </p>
                             </li>
 
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
-                                <p className={bulletText}> Coordinated{" "} <strong className={bulletStrong}>unit and team operations</strong>{" "}
-                                    during peak periods and resolved operational issues  in real time to maintain service continuity. </p>
+                                <p className={bulletText}>
+                                    Coordinated{" "}
+                                    <strong className={bulletStrong}>
+                                        unit and team operations
+                                    </strong>{" "}
+                                    during peak periods and resolved operational issues in real
+                                    time to prevent service delays and maintain service
+                                    continuity.
+                                </p>
                             </li>
 
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
                                 <p className={bulletText}>
-                                    Embraced the role of a{" "}
-                                    <strong className={bulletStrong}>team lead</strong>{" "} by{" "}
-                                    <strong className={bulletStrong}>distributing responsibilities</strong>,{" "} prioritizing tasks, and improving staff efficiency and staff coordination
-                                    in a{" "} <strong className={bulletStrong}>fast-paced environment</strong>.
+                                    Led{" "}
+                                    <strong className={bulletStrong}>
+                                        unit and team operations
+                                    </strong>{" "}
+                                    by{" "}
+                                    <strong className={bulletStrong}>
+                                        distributing responsibilities
+                                    </strong>
+                                    , prioritizing tasks, and improving service efficiency and
+                                    staff coordination in a{" "}
+                                    <strong className={bulletStrong}>
+                                        fast-paced environment
+                                    </strong>
+                                    .
                                 </p>
                             </li>
                         </ul>
@@ -76,22 +109,27 @@ export default function Experience() {
                 </div>
 
                 <div className="border-t border-zinc-200" />
-
-                {/* ROLE 2 */}
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
                     <div className="min-w-0">
-                        <h3 className="text-xl font-semibold text-zinc-900">
-                            International Service Project (Rwanda) ·{" "}
-                            <a
-                                href="https://shelterthem.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="hover:underline cursor-pointer"
-                            >
-                                Shelter Them Poverty Relief
-                            </a>{" "}
-                            | Brampton Christian School
-                        </h3>
+                        <div className="flex items-center gap-3">
+                            <img
+                                src="/shelter-them.png"
+                                alt="Shelter Them"
+                                className="h-6 w-6 rounded-md object-contain opacity-80"
+                            />
+                            <h3 className="text-xl font-semibold text-zinc-900">
+                                International Service Project (Rwanda) ·{" "}
+                                <a
+                                    href="https://shelterthem.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:underline cursor-pointer"
+                                >
+                                    Shelter Them Poverty Relief
+                                </a>{" "}
+                                | Brampton Christian School
+                            </h3>
+                        </div>
 
                         <ul className="mt-4 space-y-3">
                             <li className="flex items-start gap-3">
@@ -100,17 +138,26 @@ export default function Experience() {
                                     Collaborated within a{" "}
                                     <strong className={bulletStrong}>cross-functional team</strong>{" "}
                                     to plan and execute a{" "}
-                                    <strong className={bulletStrong}>community infrastructure project</strong>{" "}
-                                    under fixed timelines, limited resources, and logistical constraints, meeting all project deadlines.
+                                    <strong className={bulletStrong}>
+                                        community infrastructure project
+                                    </strong>{" "}
+                                    under fixed timelines, limited resources, and logistical
+                                    constraints, meeting all project deadlines.
                                 </p>
                             </li>
 
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
                                 <p className={bulletText}>
-                                    Managed {" "}
-                                    <strong className={bulletStrong}>resources, materials, and on-site execution</strong>{" "} to support the construction of a{" "}
-                                    <strong className={bulletStrong}>functional cow shelter</strong>{" "} in partnership with{" "}
+                                    Managed{" "}
+                                    <strong className={bulletStrong}>
+                                        resources, materials, and on-site execution
+                                    </strong>{" "}
+                                    to support the construction of a{" "}
+                                    <strong className={bulletStrong}>
+                                        fully functional cow shelter
+                                    </strong>{" "}
+                                    in partnership with{" "}
                                     <strong className={bulletStrong}>Shelter Them</strong>.
                                 </p>
                             </li>
@@ -119,9 +166,14 @@ export default function Experience() {
                                 <span className={bulletDot} />
                                 <p className={bulletText}>
                                     Planned and executed{" "}
-                                    <strong className={bulletStrong}>fundraising</strong>{" "} and{" "}
-                                    <strong className={bulletStrong}>budget allocation initiatives</strong>,{" "} ensuring project completion despite{" "}
-                                    <strong className={bulletStrong}>funding and resource constraints</strong>.
+                                    <strong className={bulletStrong}>
+                                        fundraising and budget allocation initiatives
+                                    </strong>
+                                    , ensuring project completion despite{" "}
+                                    <strong className={bulletStrong}>
+                                        funding and resource constraints
+                                    </strong>
+                                    .
                                 </p>
                             </li>
                         </ul>

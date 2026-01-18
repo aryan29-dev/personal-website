@@ -9,12 +9,12 @@ html {
 }
 
 body {
-  background: #eaf2ff;
+  background: #F3F6FB;
   color: #111111;
 }
 
 :root {
-  --background: #eaf2ff;
+  --background: #F3F6FB;
   --foreground: #171717;
 }
 

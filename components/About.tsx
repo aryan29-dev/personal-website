@@ -1,3 +1,17 @@
+import {
+    SiPython,
+    SiC,
+    SiCplusplus,
+    SiJavascript,
+    SiTypescript,
+    SiMysql,
+    SiReact,
+    SiNextdotjs,
+    SiNodedotjs,
+    SiFastapi,
+    SiTailwindcss,
+} from "react-icons/si";
+import { FaJava } from "react-icons/fa";
 
 export default function About() {
     return (
@@ -21,12 +35,20 @@ export default function About() {
                     </div>
 
                     <p className="mt-4 max-w-2xl text-lg text-black-700 leading-relaxed">
-                        I’m Aryan, a first-year Computing & Financial Management student at the
-                        University of Waterloo. On my free time, I enjoy building and exploring projects that intersect
-                        in the world of finance and technology. You might wonder where I found my FinTech vibe — well, I was introduced to
-                        the programming world in middle school and that's where I found my passion for coding and technology. With this foundation,
-                        I found myself digging the internet for finance-related projects to work on, which led me to explore FinTech! Now, I'm interested into learning
-                        all types of new technologies that will shape the future of FinTech!
+                        I’m Aryan, a first-year Computing & Financial Management student at the University of Waterloo (Co-op).
+                        I enjoy building projects at the intersection of finance and technology, where data and code
+                        come together to solve real problems.
+                    </p>
+
+                    <p className="mt-3 max-w-2xl text-lg text-black-700 leading-relaxed">
+                        My interest in FinTech started early - I was introduced to programming in middle school,
+                        where I discovered my passion for coding and technology. As my skills grew, I began exploring
+                        finance-related projects online, which naturally led me into the world of FinTech.
+                    </p>
+
+                    <p className="mt-3 max-w-2xl text-lg text-black-700 leading-relaxed">
+                        Currently, I’m focused on learning new technologies and building data-driven tools that will
+                        shape the future of financial technology.
                     </p>
                 </div>
 
@@ -45,25 +67,24 @@ export default function About() {
 
                     <div className="rounded-3xl border border-zinc-200 bg-white/60 p-7 shadow-sm">
                         <h3 className="text-sm font-black uppercase tracking-[0.22em] text-zinc-900">
-                            QUICK FACTS
+                            QUICK FACTS:
                         </h3>
                         <ul className="mt-3 space-y-3 text-zinc-700">
-                            <li className="flex items-center gap-2">
-                                <span className="h-2 w-2 rounded-full bg-zinc-900" />
-                                🏀 Sports Enthusiast: basketball + baseball
+                            <li className="flex items-center gap-3">
+                                <span className="text-lg">🏀⚾️</span>
+                                <span>Basketball and baseball enthusiast!</span>
                             </li>
-                            <li className="flex items-center gap-2">
-                                <span className="h-2 w-2 rounded-full bg-zinc-900" />
-                                📊 Currently, building at the intersection of finance & technology!
+                            <li className="flex items-center gap-3">
+                                <span className="text-lg">📊</span>
+                                <span>Currently building at the intersection of finance & technology!</span>
                             </li>
-                            <li className="flex items-center gap-2">
-                                <span className="h-2 w-2 rounded-full bg-zinc-900" />
-                                📈 Follows markets & investing trends!
+                            <li className="flex items-center gap-3">
+                                <span className="text-lg">📈</span>
+                                <span>Follows markets & investing trends!</span>
                             </li>
                         </ul>
                     </div>
                 </div>
-
             </div>
 
             <div className="sm:col-span-2 rounded-3xl border border-zinc-200 bg-white/60 p-6 shadow-sm gap-6 mt-8">
@@ -72,26 +93,31 @@ export default function About() {
                 </h3>
                 <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 font-mono tracking-tight">
                     {[
-                        { name: "Python", url: "https://www.python.org/" },
-                        { name: "Java", url: "https://www.oracle.com/ca-en/java/" },
-                        { name: "C / C++", url: "https://isocpp.org/" },
-                        { name: "JavaScript / TypeScript", url: "https://www.typescriptlang.org/" },
-                        { name: "SQL (MySQL)", url: "https://www.mysql.com/" },
-                        { name: "React", url: "https://react.dev/" },
-                        { name: "Next.js", url: "https://nextjs.org/" },
-                        { name: "Node.js", url: "https://nodejs.org/" },
-                        { name: "FastAPI", url: "https://fastapi.tiangolo.com/" },
-                        { name: "Tailwind CSS", url: "https://tailwindcss.com/" },
-                    ].map(({ name, url }) => (
+                        { name: "Python", url: "https://www.python.org/", icons: [SiPython] },
+                        { name: "Java", url: "https://www.oracle.com/ca-en/java/", icons: [FaJava] },
+                        { name: "C", url: "https://en.cppreference.com/w/c/language.html", icons: [SiC] },
+                        { name: "C++", url: "https://isocpp.org/", icons: [SiCplusplus] },
+                        { name: "JavaScript", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", icons: [SiJavascript] },
+                        { name: "TypeScript", url: "https://www.typescriptlang.org/", icons: [SiTypescript] },
+                        { name: "SQL (MySQL)", url: "https://www.mysql.com/", icons: [SiMysql] },
+                        { name: "React", url: "https://react.dev/", icons: [SiReact] },
+                        { name: "Next.js", url: "https://nextjs.org/", icons: [SiNextdotjs] },
+                        { name: "Node.js", url: "https://nodejs.org/", icons: [SiNodedotjs] },
+                        { name: "FastAPI", url: "https://fastapi.tiangolo.com/", icons: [SiFastapi] },
+                        { name: "Tailwind CSS", url: "https://tailwindcss.com/", icons: [SiTailwindcss] },
+                    ].map(({ name, url, icons }) => (
                         <a
                             key={name}
                             href={url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center justify-center rounded-xl border border-zinc-200/80 bg-white/80
-                            px-4 py-3.5 text-sm font-semibold text-zinc-800 shadow-sm transition hover:-translate-y-0.5 
-                            hover:shadow-md hover:bg-white cursor-pointer hover:border-zinc-400">
-                            {name}
+                            className="flex items-center justify-center gap-3 rounded-xl border border-zinc-200/80 bg-white/80
+                            px-4 py-3.5 text-sm font-semibold text-zinc-800 shadow-sm transition
+                            hover:-translate-y-0.5 hover:shadow-md hover:bg-white hover:border-zinc-400">
+                            {icons.map((Icon, idx) => (
+                                <Icon key={idx} className="text-lg text-zinc-700" />
+                            ))}
+                            <span>{name}</span>
                         </a>
                     ))}
                 </div>

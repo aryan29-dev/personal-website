@@ -23,7 +23,7 @@ const projects: Project[] = [
             "This project is a simple Streamlit web app that analyzes the actions of an equity using real historical market data (yfinance API). It calculates key risk/return metrics, determines the trend direction using linear regression, shows MA (moving average) signals, and optionally displays RSI (14) — all in a one-page dashboard with a CSV download.",
         href: "https://github.com/aryan29-dev/Equity-Trend-Analyzer",
         tech: ["Python", "NumPy", "pandas", "Matplotlib", "yfinance", "Streamlit"],
-        note: "SWE/Finance Orientated Project",
+        note: "FinTech Project",
     },
     {
         title: "Portfolio Risk Engine 📈",
@@ -31,7 +31,7 @@ const projects: Project[] = [
             "A Python-based portfolio analysis engine that uses Monte Carlo simulation to evaluate risk and optimize portfolio performance. Simulates thousands of portfolios over the time period to determine the best risk-return trade-off (i.e. highest Sharpe ratio).",
         href: "https://github.com/aryan29-dev/Portfolio-Risk-Engine",
         tech: ["Python", "NumPy", "pandas", "Matplotlib", "yfinance", "Monte Carlo Simulation", "Financial Risk Analysis"],
-        note: "SWE/Finance Orientated Project",
+        note: "FinTech Project",
     },
     {
         title: "Personal Website 🌐",
