@@ -65,12 +65,13 @@ export default function Experience() {
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
                                 <p className={bulletText}>
-                                    Coordinated unit and team operations across{" "}
+                                    Coordinated and supervised unit operations across{" "}
                                     <strong className={bulletStrong}>
                                         5–10 associates per shift
                                     </strong>
-                                    , resolving real-time operational issues to maintain continuous
-                                    workflow and reduce service delays during peak periods.
+                                    {" "}
+                                     during peak periods, resolving real-time operational issues to maintain continuous
+                                    workflow and reduce service delays.
                                 </p>
                             </li>
 
