@@ -18,6 +18,13 @@ const projects: Project[] = [
         note: "Portfolio Optimization Challenge @ UWaterloo",
     },
     {
+        title: "Market Stress & Crisis Simulator 📉📈",
+        description: "An interactive web application that stress-tests investment portfolios by replaying major historical market crises (2008 GFC, COVID-19 Crash, 2022 Rate Shock). Users can model diversified U.S. and Canadian portfolios, apply custom asset weights and rebalancing frequencies, and analyze drawdowns, risk metrics, and recovery behavior under extreme market conditions.",
+        href: "https://github.com/aryan29-dev/Market-Crisis-Simulator",
+        tech: ["Next.js", "TypeScript", "React", "Tailwind CSS", "Recharts"],
+        note: "Portfolio Risk & FinTech Project",
+    },
+    {
         title: "Equity Trend Analyzer 📉📈",
         description:
             "This project is a Streamlit web app that analyzes the actions of an equity using real historical market data (yfinance API). It calculates key risk/return metrics, determines the trend direction using linear regression, shows MA (moving average) signals, and optionally displays RSI (14) — all in a one-page dashboard with a CSV download.",

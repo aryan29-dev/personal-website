@@ -2,6 +2,13 @@ import "./globals.css";
 
 import { Titillium_Web } from "next/font/google";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Aryan Singh | Portfolio",
+  description: "Personal Portfolio of Aryan Singh",
+};
+
 const f1 = Titillium_Web({
   subsets: ["latin"],
   weight: ["400", "600", "700", "900"],
