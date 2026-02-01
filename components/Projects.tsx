@@ -19,7 +19,7 @@ const projects: Project[] = [
     },
     {
         title: "Market Stress & Crisis Simulator 📉📈",
-        description: "An interactive web application that stress-tests investment portfolios by replaying major historical market crises (2008 GFC, COVID-19 Crash, 2022 Rate Shock). Users can model diversified U.S. and Canadian portfolios, apply custom asset weights and rebalancing frequencies, and analyze drawdowns, risk metrics, and recovery behavior under extreme market conditions.",
+        description: "A portfolio stress-testing application that replays major historical market crises (2008 GFC, COVID-19 Crash, 2022 Rate Shock) to evaluate drawdowns, recovery dynamics, and risk-adjusted performance. Designed to model diversified U.S. and Canadian portfolios under extreme market stress rather than optimize returns.",
         href: "https://github.com/aryan29-dev/Market-Crisis-Simulator",
         tech: ["Next.js", "TypeScript", "React", "Tailwind CSS", "Recharts"],
         note: "Portfolio Risk & FinTech Project",
