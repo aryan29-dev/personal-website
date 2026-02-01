@@ -1,20 +1,33 @@
-# Aryan's Portfolio.
+# Aryan's Portfolio 🌐
 
-This is a responsive personal portfolio website showcasing my experience and projects in the world of software, data, and finance!
+A responsive personal portfolio website showcasing my background and projects in **software engineering**, **data analytics**, and **financial technology**.  
+Designed to highlight hands-on technical work, quantitative projects, and real-world problem solving.
+
+🔗 **Live site:** https://aryansingh.app
+
 ---
 
-Live site: [aryansingh.app](https://aryansingh.app/)
+## Features
+
+- Modern, responsive design optimized for desktop and mobile
+- Project-focused layout highlighting technical depth and impact
+- Clean UI with subtle animations and interactive elements
+- Fast load times and optimized performance
+- Deployed with production-grade tooling
+
+---
 
 ## 🛠 Tech Stack
 
-- **Framework:** Next.js
+- **Framework:** Next.js (App Router)
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
 - **Icons:** lucide-react
 - **Deployment:** Vercel
+
 ---
 
-## 🚀 How To Access The Website
+## 🚀 Running Locally
 
 ```bash
 git clone https://github.com/aryan29-dev/personal-website.git
