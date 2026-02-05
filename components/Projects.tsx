@@ -190,7 +190,7 @@ function ProjectCard({ p }: { p: Project }) {
                     </ul>
                 </div>
 
-                <div className="flex flex-row gap-2 sm:flex-col sm:items-end">
+                <div className="flex flex-row gap-3 sm:flex-row sm:items-center">
                     {p.demo ? (
                         <a
                             href={p.demo}
