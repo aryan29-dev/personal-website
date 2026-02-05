@@ -183,13 +183,9 @@ function ProjectCard({ p }: { p: Project }) {
                     <p className="mt-3 max-w-3xl text-zinc-700 leading-relaxed">
                         {p.blurb}
                     </p>
-
-                    <ul className="mt-3 space-y-2 text-sm text-zinc-700">
+                    <ul className="mt-3 list-disc! list-outside pl-6! space-y-2 text-sm text-zinc-700 marker:text-zinc-500">
                         {p.highlights.map((h) => (
-                            <li key={h} className="flex gap-2">
-                                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-zinc-400 shrink-0" />
-                                <span>{h}</span>
-                            </li>
+                            <li key={h}>{h}</li>
                         ))}
                     </ul>
                 </div>
