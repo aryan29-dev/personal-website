@@ -95,14 +95,14 @@ export default function Experience() {
                                 className="h-6 w-6 rounded-md object-contain opacity-80"
                             />
                             <h3 className="text-xl font-semibold text-zinc-900">
-                                International Service Project (Rwanda) ·{" "}
+                                International Service Project (Global Development) ·{" "}
                                 <a
                                     href="https://shelterthem.com/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="hover:underline cursor-pointer"
                                 >
-                                    Shelter Them Poverty Relief
+                                    Shelter Them Poverty Relief (NGO)
                                 </a>{" "}
                                 | Brampton Christian School
                             </h3>
