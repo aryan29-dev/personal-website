@@ -30,10 +30,10 @@ const projects: Project[] = [
     {
         title: "Robo-Advising Portfolio Optimizer 📊",
         blurb:
-            "Builds a market-meet portfolio from CSV input with sector caps and real price data.",
+            "Builds a market-meet portfolio from a CSV input with sector caps and real price data (yfinance API).",
         highlights: [
             "Filters equities by currency, liquidity, and market cap with validation for invalid/delisted tickers",
-            "Constructs a $1,000,000 CAD portfolio aligned to S&P 500 + TSX Composite while accounting for FX + fees",
+            "Constructs a $1,000,000 CAD portfolio aligned to S&P 500 + TSX Composite while accounting for FX and fees",
         ],
         github: "https://github.com/aryan29-dev/Robo-Advising-Challenge",
         tech: ["Python", "pandas", "NumPy", "yfinance", "Jupyter Notebook"],
@@ -43,7 +43,7 @@ const projects: Project[] = [
     {
         title: "Equity Trend Analyzer 📉📈",
         blurb:
-            "Interactive dashboard to analyze trends + signals using historical market data.",
+            "Interactive dashboard to analyze trends and signals using historical market data.",
         highlights: [
             "Calculates key risk/return metrics (max drawdown, total return, annualized volatility)",
             "Classifies trend via linear regression on log-prices and generates MA crossover + RSI(14) signals",
@@ -59,7 +59,7 @@ const projects: Project[] = [
         blurb: "Monte Carlo simulation engine to explore portfolio risk-return tradeoffs.",
         highlights: [
             "Simulates thousands of portfolios to evaluate distributions of return/volatility",
-            "Identifies risk-adjusted candidates (e.g., highest Sharpe) to compare tradeoffs over a chosen period",
+            "Identifies risk-adjusted candidates (e.g., highest Sharpe ratio) to compare tradeoffs over a chosen period",
         ],
         github: "https://github.com/aryan29-dev/Portfolio-Risk-Engine",
         tech: ["Python", "pandas", "NumPy", "Matplotlib", "yfinance"],
@@ -69,8 +69,8 @@ const projects: Project[] = [
         title: "Personal Website 🌐",
         blurb: "Modern portfolio site with clean UI, responsive layout, and accessibility-friendly components.",
         highlights: [
-            "Built reusable sections (About/Experience/Projects/Contact) with consistent spacing and typography",
-            "Optimized for fast navigation, clear CTAs, and project proof links",
+            "Built numerous sections (About/Experience/Projects/Contact) with consistent design and smooth interactions",
+            "Optimized for fast navigation, clear CTAs, and project links",
         ],
         github: "https://github.com/aryan29-dev/personal-website",
         demo: "https://aryansingh.app/",
@@ -81,7 +81,7 @@ const projects: Project[] = [
         title: "Baller (Basketball Roster Manager) 🏀",
         blurb: "Java roster manager focused on clean OOP structure and core DSA operations.",
         highlights: [
-            "Implements add/remove/search/sort using ArrayLists with clear class responsibilities",
+            "Implements add/remove/search/sort logic using ArrayLists with clear class responsibilities",
             "Designed to practice OOP patterns and algorithmic thinking with clean console output",
         ],
         github: "https://github.com/aryan29-dev/Baller",
@@ -190,7 +190,7 @@ function ProjectCard({ p }: { p: Project }) {
                     </ul>
                 </div>
 
-                <div className="flex flex-row gap-3 sm:flex-row sm:items-center">
+                <div className="flex flex-row gap-3 sm:flex-row sm:items-center whitespace-nowrap">
                     {p.demo ? (
                         <a
                             href={p.demo}
