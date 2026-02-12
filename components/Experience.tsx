@@ -111,6 +111,17 @@ export default function Experience() {
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
                                 <p className={bulletText}>
+                                    Planned and executed fundraising and budget allocation initiatives,
+                                    raising{" "}
+                                    <strong className={bulletStrong}>$2,000+</strong>{" "}
+                                    and coordinating financial planning to ensure on-time completion
+                                    under limited funding resources.
+                                </p>
+                            </li>
+                            
+                            <li className="flex items-start gap-3">
+                                <span className={bulletDot} />
+                                <p className={bulletText}>
                                     Collaborated within a cross-functional team of{" "}
                                     <strong className={bulletStrong}>15+ members</strong>{" "}
                                     to plan and execute a community infrastructure project, successfully
@@ -127,17 +138,6 @@ export default function Experience() {
                                     Shelter Them, ensuring on-time completion within a{" "}
                                     <strong className={bulletStrong}>2-week timeline</strong>{" "}
                                     under limited resources.
-                                </p>
-                            </li>
-
-                            <li className="flex items-start gap-3">
-                                <span className={bulletDot} />
-                                <p className={bulletText}>
-                                    Planned and executed fundraising and budget allocation initiatives,
-                                    raising{" "}
-                                    <strong className={bulletStrong}>$2,000+</strong>{" "}
-                                    and coordinating financial planning to ensure on-time completion
-                                    under limited funding resources.
                                 </p>
                             </li>
                         </ul>
