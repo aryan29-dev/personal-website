@@ -94,15 +94,15 @@ export default function About() {
                             QUICK FACTS:
                         </h3>
                         <ul className="mt-3 space-y-3 text-zinc-700">
-                            <li className="flex items-center gap-3">
-                                <span className="text-lg">🏀⚾️</span>
+                            <li className="flex items-center gap-2">
+                                <span className="text-lg">🏀 ⚾️</span>
                                 <span>Favorite Sports: Basketball and Baseball!</span>
                             </li>
-                            <li className="flex items-center gap-3">
+                            <li className="flex items-center gap-2">
                                 <span className="text-lg">📊</span>
                                 <span>Currently building at the intersection of finance & technology!</span>
                             </li>
-                            <li className="flex items-center gap-3">
+                            <li className="flex items-center gap-2">
                                 <span className="text-lg">📈</span>
                                 <span>Follows markets & investing trends!</span>
                             </li>
