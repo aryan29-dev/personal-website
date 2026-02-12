@@ -37,7 +37,7 @@ export default function Home() {
                                 I <Highlight rotate="-3deg">design</Highlight> with vision and <Highlight rotate="-3deg">code</Highlight> with purpose.
                             </h1>
                             <p className="mt-4 font-black italic text-zinc-900 text-2xl sm:text-3xl md:text-4xl">
-                                Built through consistency.
+                                Built on consistency.
                             </p>
 
                             <p className="mt-6 text-xl text-zinc-700 max-w-2xl">
