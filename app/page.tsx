@@ -51,7 +51,7 @@ export default function Home() {
                                 >
                                     University of Waterloo
                                 </a>
-                                , who is passionate about the intersection of software, data, and finance!
+                                , who is passionate about the intersection of software, data analytics, and finance!
                             </p>
 
                             <div className="mt-8 w-full max-w-sm">
