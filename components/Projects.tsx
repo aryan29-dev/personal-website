@@ -19,7 +19,7 @@ const projects: Project[] = [
             "Interactive web app that stress-tests investment portfolios against major historical crises to quantify downside risk and recovery behavior.",
         highlights: [
             "Replays 3 historical crisis periods (2008 GFC, COVID-19 Crash, 2022 Rate Shock) across U.S. & Canadian portfolios to simulate real-world drawdowns",
-            "Calculates 6 portfolio-level metrics including total return, maximum drawdown, annualized volatility, Sharpe ratio, annualized return, and recovery duration over customizable 12–36 month horizons",
+            "Calculates 6+ portfolio-level metrics including total return, maximum drawdown, annualized volatility, Sharpe ratio, annualized return, and recovery duration over customizable 12–36 month horizons",
         ],
         github: "https://github.com/aryan29-dev/Market-Crisis-Simulator",
         demo: "https://market-crisis-simulator.vercel.app",
@@ -46,7 +46,7 @@ const projects: Project[] = [
             "Interactive financial analytics dashboard for evaluating equity momentum, volatility, and signal-based trading strategies.",
         highlights: [
             "Analyzes historical price data to compute total return, annualized volatility, and max drawdown across user-selected equities",
-            "Implements quantitative indicators including log-linear regression trend classification, moving average crossovers, and RSI(14) signal generation",
+            "Implements quantitative indicators including log-linear regression trend classification, moving average crossovers, and RSI (14) signal generation",
         ],
         github: "https://github.com/aryan29-dev/Equity-Trend-Analyzer",
         demo: "https://equitytrendanalyzer.streamlit.app",
