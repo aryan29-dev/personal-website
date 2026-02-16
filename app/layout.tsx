@@ -7,7 +7,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Aryan Singh | Portfolio",
   description: "Personal Portfolio of Aryan Singh",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
+
 
 const f1 = Titillium_Web({
   subsets: ["latin"],
