@@ -111,33 +111,27 @@ export default function Experience() {
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
                                 <p className={bulletText}>
-                                    Planned and executed fundraising and budget allocation initiatives,
-                                    raising{" "}
+                                    Planned and executed fundraising initiatives, raising{" "}
                                     <strong className={bulletStrong}>$2,000+</strong>{" "}
-                                    and coordinating financial planning to ensure on-time completion
-                                    under limited funding resources.
-                                </p>
-                            </li>
-                            
-                            <li className="flex items-start gap-3">
-                                <span className={bulletDot} />
-                                <p className={bulletText}>
-                                    Collaborated within a cross-functional team of{" "}
-                                    <strong className={bulletStrong}>15+ members</strong>{" "}
-                                    to plan and execute a community infrastructure project, successfully
-                                    meeting all project deadlines despite fixed timelines and logistical
-                                    constraints.
+                                    and coordinating budget allocation to ensure on-time completion under constrained funding.
                                 </p>
                             </li>
 
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
                                 <p className={bulletText}>
-                                    Managed resources, materials, and on-site execution during the
-                                    construction of a fully functional cow shelter in partnership with
-                                    Shelter Them, ensuring on-time completion within a{" "}
+                                    Collaborated within a cross-functional team of{" "}
+                                    <strong className={bulletStrong}>15+ members</strong>{" "}
+                                    to plan and execute a community infrastructure project, meeting all deadlines despite fixed timelines and logistical constraints.
+                                </p>
+                            </li>
+
+                            <li className="flex items-start gap-3">
+                                <span className={bulletDot} />
+                                <p className={bulletText}>
+                                    Managed resources, materials, and on-site execution during construction of a fully operational cow shelter, ensuring completion within a{" "}
                                     <strong className={bulletStrong}>2-week timeline</strong>{" "}
-                                    under limited resources.
+                                    under constrained resources.
                                 </p>
                             </li>
                         </ul>
