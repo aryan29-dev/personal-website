@@ -116,7 +116,7 @@ export default function About() {
 
             <div className="sm:col-span-2 rounded-3xl border border-zinc-200 bg-white/60 p-6 shadow-sm gap-6 mt-8">
                 <h3 className="text-lg font-black uppercase tracking-[0.22em] text-zinc-900">
-                    LANGUAGES & FRAMEWORKS I ENJOY BUILDING WITH!
+                    LANGUAGES, FRAMEWORKS & DATA ANALYTICS TOOLS I ENJOY BUILDING WITH!
                 </h3>
                 <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 font-mono tracking-tight">
                     {[
