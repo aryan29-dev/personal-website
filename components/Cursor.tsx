@@ -21,7 +21,7 @@ export default function CursorGlow() {
         transform: `translate(${position.x - 150}px, ${position.y - 150}px)`,
       }}
     >
-      <div className="h-75 w-75 rounded-full bg-blue-400/15 blur-3xl" />
+      <div className="h-75 w-75 rounded-full bg-blue-900/10 blur-3xl" />
     </div>
   );
 }

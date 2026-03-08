@@ -4,6 +4,11 @@ import { Titillium_Web } from "next/font/google";
 
 import type { Metadata } from "next";
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   title: "Aryan Singh | Portfolio",
   description: "Personal Portfolio of Aryan Singh",
@@ -19,6 +24,7 @@ const f1 = Titillium_Web({
   variable: "--font-f1",
 });
 import CursorGlow from "@/components/Cursor";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function RootLayout({
   children,
@@ -29,6 +35,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${f1.variable} antialiased`}>
         <CursorGlow />
+        <ThemeToggle />
         {children}
       </body>
     </html>

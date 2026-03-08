@@ -1,101 +1,66 @@
 "use client";
 
 import Navbar from "../components/Navbar";
+import TypedName from "@/components/TypedName";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "../components/Footer";
 
-function Highlight({
-    children,
-    rotate = "-2deg",
-}: {
-    children: React.ReactNode;
-    rotate?: string;
-}) {
-    return (
-        <span className="relative inline-block">
-            <span
-                className="absolute -inset-x-2 inset-y-1 rounded-md bg-blue-300"
-                style={{ transform: `rotate(${rotate})` }}
-            />
-            <span className="relative italic font-black">{children}</span>
-        </span>
-    );
-}
-
 export default function Home() {
     return (
         <>
             <Navbar />
-            <main className="mx-auto max-w-6xl px-6">
-                <section className="pt-24 pb-32 sm:pb-40">
-                    <div className="mx-auto w-full max-w-5xl px-5 sm:px-8">
-                        <div className="relative mx-auto max-w-6xl px-6">
-                            <h1 className="font-black text-zinc-900 tracking-tight leading-tight text-[clamp(2.75rem,6vw,4.75rem)]">
-                                I <Highlight rotate="-3deg">design</Highlight> with vision and <Highlight rotate="-3deg">code</Highlight> with purpose.
-                            </h1>
-                            <p className="mt-4 font-black italic text-zinc-900 text-2xl sm:text-3xl md:text-4xl">
-                                Built on consistency.
-                            </p>
-
-                            <p className="mt-6 text-xl text-zinc-700 max-w-2xl">
-                                Hi! I'm Aryan Singh, a first-year Computing And Financial Management student (Co-op) @{" "}
-                                <a
-                                    href="https://uwaterloo.ca"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="relative font-semibold inline-block border-b-2 border-zinc-900 
-                                    hover:border-blue-600 hover:text-blue-600 transition"
-                                >
-                                    University of Waterloo
-                                </a>
-                                , who is passionate about the intersection of software, data analytics, and finance!
-                            </p>
-
-                            <div className="mt-8 w-full max-w-sm">
-                                <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-nowrap sm:gap-3">
-                                    <a
-                                        href="/Aryan_Singh_S26_Resume.pdf"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex items-center justify-center rounded-full border border-zinc-300 bg-white/70 px-5 py-2 text-sm font-semibold text-zinc-900 backdrop-blur transition hover:bg-white hover:shadow-sm sm:w-auto"
-                                    >
-                                        Resume
-                                    </a>
-
-                                    <a
-                                        href="https://github.com/aryan29-dev"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex items-center justify-center rounded-full border border-zinc-300 bg-white/70 px-5 py-2 text-sm font-semibold text-zinc-900 backdrop-blur transition hover:bg-white hover:shadow-sm sm:w-auto"
-                                    >
-                                        GitHub
-                                    </a>
-
-                                    <a
-                                        href="https://www.linkedin.com/in/aryan-singh29/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex items-center justify-center rounded-full border border-zinc-300 bg-white/70 px-5 py-2 text-sm font-semibold text-zinc-900 backdrop-blur transition hover:bg-white hover:shadow-sm sm:w-auto"
-                                    >
-                                        LinkedIn
-                                    </a>
-                                    <div className="sm:hidden" />
-                                </div>
+            <main className="mx-auto max-w-6xl px-4 sm:px-6">
+                <section className="pt-20 pb-32">
+                    <div className="mx-auto w-full max-w-5xl px-0">
+                        <p className="text-sm font-medium text-stone-400 tracking-widest uppercase mb-6">
+                            Welcome to my portfolio.
+                        </p>
+                        <h1 className="font-black text-stone-950 tracking-tight leading-none text-[clamp(3rem,7vw,6rem)]">
+                            <TypedName text="Aryan Singh" />
+                        </h1>
+                        <p className="mt-3 text-[clamp(1rem,2vw,1.35rem)] text-stone-700 font-normal max-w-xl leading-relaxed">
+                            First-year student in Computing and Financial Management (Co-op) at the{" "}
+                            <a href="https://uwaterloo.ca" target="_blank" rel="noopener noreferrer" className="text-stone-700 underline underline-offset-4 decoration-stone-300 hover:decoration-stone-600 transition">
+                                University of Waterloo
+                            </a>
+                            . Passionate about FinTech, data analytics, and building impactful software.
+                        </p>
+                        <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-2xl">
+                            <div className="rounded-2xl bg-stone-50 border border-stone-200 px-5 py-4">
+                                <p className="text-xs text-stone-500 uppercase tracking-widest mb-1">Program</p>
+                                <p className="text-base font-semibold text-stone-800">Computing and Financial Management</p>
                             </div>
+                            <div className="rounded-2xl bg-stone-50 border border-stone-200 px-5 py-4">
+                                <p className="text-xs text-stone-400 uppercase tracking-widest mb-1">Graduating</p>
+                                <p className="text-base font-semibold text-stone-800">Expected Apr. 2030</p>
+                            </div>
+                            <div className="rounded-2xl bg-indigo-50 border border-indigo-200 px-5 py-4 col-span-2 sm:col-span-1">
+                                <p className="text-xs text-indigo-700 uppercase tracking-widest mb-1">Status</p>
+                                <p className="text-base font-semibold text-indigo-700">Seeking Co-op · Spring 2026</p>
+                            </div>
+                        </div>
+                        <div className="mt-10 flex flex-row gap-2">
+                            <a href="/Aryan_Singh_S26_Resume.pdf" target="_blank" rel="noopener noreferrer" className="rounded-full bg-stone-900 px-4 py-2 text-sm font-semibold text-white hover:bg-stone-700 transition whitespace-nowrap">
+                                Resume
+                            </a>
+                            <a href="https://github.com/aryan29-dev" target="_blank" rel="noopener noreferrer" className="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-semibold text-stone-800 hover:bg-stone-50 transition whitespace-nowrap">
+                                GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/aryan-singh29/" target="_blank" rel="noopener noreferrer" className="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-semibold text-stone-800 hover:bg-stone-50 transition whitespace-nowrap">
+                                LinkedIn
+                            </a>
                         </div>
                     </div>
                 </section>
-
                 <About />
                 <Experience />
                 <Projects />
                 <Contact />
                 <Footer />
-
-            </main >
+            </main>
         </>
     );
 }

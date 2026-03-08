@@ -2,80 +2,35 @@ import { Mail, Linkedin, Github, FileText } from "lucide-react";
 
 export default function Contact() {
     return (
-        <section id="contact" className="py-28 border-t border-zinc-200">
-            <div className="mb-16">
-                <div className="inline-flex items-center gap-3">
-                    <span className="inline-block h-2 w-10 rounded-full bg-zinc-900" />
-                    <h2
-                        className="font-black uppercase tracking-[0.28em] text-zinc-900 text-3xl sm:text-4xl"
-                        style={{
-                            fontFamily:
-                                "ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial",
-                        }}
-                    >
-                        CONTACT
-                    </h2>
-                </div>
-            </div>
+        <section id="contact" className="py-16 border-t border-stone-200">
+            <p className="text-xs font-bold text-stone-500 tracking-[0.2em] uppercase mb-5">Contact</p>
+            <h2 className="text-4xl sm:text-5xl font-black text-stone-950 tracking-tight leading-tight mb-8">
+                Open to Opportunities.
+            </h2>
 
             <div className="grid gap-12 sm:grid-cols-2 items-center">
-                <div className="space-y-10 text-zinc-900">
-                    <a
-                        href="mailto:a923sing@uwaterloo.ca"
-                        className="group flex items-center gap-5 transition hover:opacity-80 cursor-pointer"
-                    >
-                        <Mail className="h-7 w-7" />
-                        <span className="font-f1 text-2xl tracking-wide group-hover:underline underline-offset-4">
-                            a923sing@uwaterloo.ca
-                        </span>
+                <div className="space-y-6">
+                    <a href="mailto:a923sing@uwaterloo.ca" className="flex items-center gap-4 rounded-2xl border border-stone-200 bg-stone-50 px-5 py-4 text-stone-800 transition hover:border-stone-400 hover:bg-white">
+                        <Mail className="h-5 w-5 text-stone-400 shrink-0" />
+                        <span className="text-sm font-medium text-stone-800">a923sing@uwaterloo.ca</span>
                     </a>
-
-                    <a
-                        href="https://www.linkedin.com/in/aryan-singh29/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group flex items-center gap-5 transition hover:opacity-80 cursor-pointer"
-                    >
-                        <Linkedin className="h-7 w-7" />
-                        <span className="font-f1 text-2xl tracking-wide group-hover:underline underline-offset-4">
-                            aryan-singh29
-                        </span>
+                    <a href="https://www.linkedin.com/in/aryan-singh29/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-2xl border border-stone-200 bg-stone-50 px-5 py-4 text-stone-800 transition hover:border-stone-400 hover:bg-white">
+                        <Linkedin className="h-5 w-5 text-stone-400 shrink-0" />
+                        <span className="text-sm font-medium text-stone-800">aryan-singh29</span>
                     </a>
-
-                    <a
-                        href="/Aryan_Singh_S26_Resume.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group flex items-center gap-5 transition hover:opacity-80 cursor-pointer"
-                    >
-                        <FileText className="h-7 w-7" />
-                        <span className="font-f1 text-2xl tracking-wide group-hover:underline underline-offset-4">
-                            Resume
-                        </span>
+                    <a href="/Aryan_Singh_S26_Resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-2xl border border-stone-200 bg-stone-50 px-5 py-4 text-stone-800 transition hover:border-stone-400 hover:bg-white">
+                        <FileText className="h-5 w-5 text-stone-400 shrink-0" />
+                        <span className="text-sm font-medium text-stone-800">Resume</span>
                     </a>
-
-                    <a
-                        href="https://github.com/aryan29-dev"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group flex items-center gap-5 transition hover:opacity-80 cursor-pointer"
-                    >
-                        <Github className="h-7 w-7" />
-                        <span className="font-f1 text-2xl tracking-wide group-hover:underline underline-offset-4">
-                            aryan29-dev
-                        </span>
+                    <a href="https://github.com/aryan29-dev" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-2xl border border-stone-200 bg-stone-50 px-5 py-4 text-stone-800 transition hover:border-stone-400 hover:bg-white">
+                        <Github className="h-5 w-5 text-stone-400 shrink-0" />
+                        <span className="text-sm font-medium text-stone-800">aryan29-dev</span>
                     </a>
                 </div>
 
-                <div className="flex justify-center sm:justify-end">
-                    <div className="relative rounded-2xl bg-white p-4 shadow-2xl">
-                        <div className="absolute inset-0 rounded-2xl border border-zinc-900/20" />
-                        <img
-                            src="/profile.jpeg"
-                            alt="Aryan Singh"
-                            className="relative w-80 h-80 sm:w-96 sm:h-100 rounded-xl object-cover object-[50%_15%]"
-                        />
-
+                <div className="flex justify-center sm:justify-end items-start">
+                    <div className="rounded-2xl border border-stone-200 bg-white p-3 shadow-sm w-full max-w-md">
+                        <img src="/profile.jpeg" alt="Aryan Singh" className="w-full aspect-square rounded-2xl object-cover object-[50%_15%]" />
                     </div>
                 </div>
             </div>
