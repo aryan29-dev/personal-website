@@ -1,10 +1,12 @@
+import { useFadeIn } from "./useFadeIn";
 const bulletDot = "mt-[0.55rem] h-1.5 w-1.5 rounded-full bg-stone-500 shrink-0";
 const bulletText = "m-0 text-stone-700 leading-relaxed text-[15px] sm:text-base";
 const bulletStrong = "font-semibold text-stone-700";
 
 export default function Experience() {
+    const fade = useFadeIn();
     return (
-        <section id="experience" className="py-16 border-t border-stone-200">
+        <section id="experience" ref={fade.ref} className={`py-16 border-t border-stone-200 fade-up ${fade.visible ? "visible" : ""}`}>
             <p className="text-xs font-bold text-stone-500 tracking-[0.2em] uppercase mb-5">Experience</p>
             <h2 className="text-4xl sm:text-5xl font-black text-stone-950 tracking-tight leading-tight mb-3">
                 Work and Leadership.

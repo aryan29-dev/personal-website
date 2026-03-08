@@ -1,3 +1,4 @@
+import { useFadeIn } from "./useFadeIn";
 import {
     SiPython, SiC, SiCplusplus, SiJavascript, SiTypescript, SiMysql,
     SiReact, SiNextdotjs, SiNodedotjs, SiFastapi, SiTailwindcss,
@@ -16,8 +17,11 @@ const iconColors: Record<string, string> = {
 };
 
 export default function About() {
+    const s1 = useFadeIn();
+    const s2 = useFadeIn();
+    const s3 = useFadeIn();
     return (
-        <section id="about" className="py-16 border-t border-stone-200">
+        <section id="about" ref={s1.ref} className={`fade-up ${s1.visible ? "visible" : ""}`} className="py-16 border-t border-stone-200">
             <p className="text-xs font-bold text-stone-500 tracking-[0.2em] uppercase mb-5">About</p>
             <div className="flex flex-col gap-10 sm:flex-row sm:items-start sm:justify-between">
                 <div>

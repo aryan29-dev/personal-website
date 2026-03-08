@@ -1,8 +1,10 @@
+import { useFadeIn } from "./useFadeIn";
 import { Mail, Linkedin, Github, FileText } from "lucide-react";
 
 export default function Contact() {
+    const fade = useFadeIn();
     return (
-        <section id="contact" className="py-16 border-t border-stone-200">
+        <section id="contact" ref={fade.ref} className={`py-16 border-t border-stone-200 fade-up ${fade.visible ? "visible" : ""}`}>
             <p className="text-xs font-bold text-stone-500 tracking-[0.2em] uppercase mb-5">Contact</p>
             <h2 className="text-4xl sm:text-5xl font-black text-stone-950 tracking-tight leading-tight mb-8">
                 Open to Opportunities.

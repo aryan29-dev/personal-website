@@ -1,3 +1,4 @@
+import { useFadeIn } from "./useFadeIn";
 import { Github, ExternalLink } from "lucide-react";
 import { useMemo } from "react";
 
@@ -111,11 +112,12 @@ const projects: Project[] = [
 ];
 
 export default function Projects() {
+    const fade = useFadeIn();
     const featured = useMemo(() => projects.filter((p) => p.featured), []);
     const rest = useMemo(() => projects.filter((p) => !p.featured), []);
 
     return (
-        <section id="projects" className="py-16 border-t border-stone-200">
+        <section id="projects" ref={fade.ref} className={`py-16 border-t border-stone-200 fade-up ${fade.visible ? "visible" : ""}`}>
             <p className="text-xs font-bold text-stone-500 tracking-[0.2em] uppercase mb-5">Projects</p>
             <h2 className="text-4xl sm:text-5xl font-black text-stone-950 tracking-tight leading-tight mb-3">
                 Selected Projects.
