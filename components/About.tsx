@@ -21,7 +21,7 @@ export default function About() {
     const s2 = useFadeIn();
     const s3 = useFadeIn();
     return (
-        <section id="about" ref={s1.ref} className={`fade-up ${s1.visible ? "visible" : ""}`} className="py-16 border-t border-stone-200">
+        <section id="about" ref={s1.ref} className={`py-16 border-t border-stone-200 fade-up ${s1.visible ? "visible" : ""}`}>
             <p className="text-xs font-bold text-stone-500 tracking-[0.2em] uppercase mb-5">About</p>
             <div className="flex flex-col gap-10 sm:flex-row sm:items-start sm:justify-between">
                 <div>
