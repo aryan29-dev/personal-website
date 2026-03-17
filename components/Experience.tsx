@@ -17,6 +17,7 @@ export default function Experience() {
             </p>
 
             <div className="space-y-12 max-w-4xl">
+                {/* Canada's Wonderland */}
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
                     <div className="min-w-0">
                         <div className="flex items-center gap-3 mb-1">
@@ -29,11 +30,11 @@ export default function Experience() {
                         <ul className="space-y-3">
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
-                                <p className={bulletText}>Executed <strong className={bulletStrong}>300+ high-volume financial transactions</strong> per shift using Oracle POS systems, maintaining 95-99% transaction accuracy and audit-level accountability during peak operating hours.</p>
+                                <p className={bulletText}>Processed <strong className={bulletStrong}>300+ high-volume guest transactions</strong> per shift using Oracle POS systems, maintaining 95–99% accuracy during peak operating hours.</p>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
-                                <p className={bulletText}>Supervised and coordinated day-to-day operations across <strong className={bulletStrong}>5-10 associates per shift</strong> during peak periods, providing task delegation and resolving real-time operational issues.</p>
+                                <p className={bulletText}>Coordinated operations across <strong className={bulletStrong}>5–10 associates per shift</strong>, delegating tasks to cut wait times and sustain service standards during peak periods.</p>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
@@ -46,6 +47,7 @@ export default function Experience() {
 
                 <div className="border-t border-stone-100" />
 
+                {/* Shelter Them */}
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
                     <div className="min-w-0">
                         <div className="flex items-center gap-3 mb-1">
@@ -58,11 +60,11 @@ export default function Experience() {
                         <ul className="space-y-3">
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
-                                <p className={bulletText}>Planned and executed fundraising initiatives, raising <strong className={bulletStrong}>$2,000+</strong> and coordinating budget allocation to ensure on-time completion under constrained funding.</p>
+                                <p className={bulletText}>Planned and executed fundraising initiatives, raising <strong className={bulletStrong}>$2,000+</strong> and coordinating budget allocation to support on-time project delivery.</p>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
-                                <p className={bulletText}>Collaborated within a cross-functional team of <strong className={bulletStrong}>15+ members</strong> to plan and execute a community infrastructure project, meeting all deadlines despite fixed timelines.</p>
+                                <p className={bulletText}>Collaborated across a cross-functional team of <strong className={bulletStrong}>15+ members</strong> to deliver a community infrastructure project on time and under budget despite logistical constraints.</p>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
