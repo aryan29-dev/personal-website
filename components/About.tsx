@@ -53,7 +53,7 @@ export default function About() {
                     <div className="rounded-2xl bg-stone-50 border border-stone-200 px-5 py-5">
                         <p className="text-xs text-stone-500 uppercase tracking-widest mb-3">Quick Facts</p>
                         <ul className="space-y-2 text-sm text-stone-700">
-                            <li className="flex items-start gap-2"><span>📊</span><span>Internal Auditor at the CNE, Data Analyst at Focus on Nature</span></li>
+                            <li className="flex items-start gap-2"><span>📊</span><span>Past Internal Auditor at the CNE, Data Analyst at Focus on Nature</span></li>
                             <li className="flex items-start gap-2"><span>📈</span><span>Follows equity markets, ETFs, and macro trends</span></li>
                             <li className="flex items-start gap-2"><span>🏀</span><span>Raptors and Blue Jays Fan</span></li>
                         </ul>

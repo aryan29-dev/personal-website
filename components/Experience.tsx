@@ -6,7 +6,7 @@ const bulletStrong = "font-semibold text-stone-900 dark:text-stone-100";
 const roleTitle = "text-base font-semibold text-stone-800 dark:text-stone-100";
 const orgName = "text-sm font-medium text-stone-500 dark:text-stone-400 mb-4";
 const dateText = "text-xs font-medium text-stone-500 dark:text-stone-400 sm:whitespace-nowrap";
-const logo = "h-6 w-6 rounded-md object-contain opacity-80";
+const logo = "h-6 w-6 rounded-md object-contain dark:invert";
 const divider = "border-t border-stone-100 dark:border-white/5";
 
 export default function Experience() {
@@ -72,7 +72,7 @@ export default function Experience() {
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
-                                <p className={bulletText}>Modeled a weighted socioeconomic score comparing school-level low-income and parental education rates against provincial levels of <strong className={bulletStrong}>9.25%</strong> and 4.61%, using dual-key INDEX/MATCH array formulas and PivotTables.</p>
+                                <p className={bulletText}>Modeled a weighted socioeconomic score against provincial baselines of <strong className={bulletStrong}>9.25%</strong> low-income and 4.61% no-degree households, using dual-key INDEX/MATCH array formulas and PivotTables.</p>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
@@ -80,7 +80,7 @@ export default function Experience() {
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
-                                <p className={bulletText}>Presented findings for <strong className={bulletStrong}>9 Ontario regions</strong> to the Board of Directors, prioritizing outreach for program planning.</p>
+                                <p className={bulletText}>Presented findings for <strong className={bulletStrong}>9 Ontario regions</strong> to the Board of Directors, prioritizing school outreach for program planning.</p>
                             </li>
                         </ul>
                     </div>
@@ -100,7 +100,7 @@ export default function Experience() {
                         <ul className="space-y-3">
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
-                                <p className={bulletText}>Raised <strong className={bulletStrong}>$2,000+</strong> through student-led fundraising and managed budget allocation across the full project timeline.</p>
+                                <p className={bulletText}>Raised <strong className={bulletStrong}>$2,000+</strong> through student-led fundraising campaigns and managed budget allocation across the full project timeline.</p>
                             </li>
                             <li className="flex items-start gap-3">
                                 <span className={bulletDot} />
@@ -114,9 +114,6 @@ export default function Experience() {
                     </div>
                     <span className={dateText}>Mar. 2024</span>
                 </div>
-
-                <div className={divider} />
-
             </div>
         </section>
     );

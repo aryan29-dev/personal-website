@@ -15,17 +15,16 @@ type Project = {
 
 const projects: Project[] = [
     {
-        title: "EPS Drift Scanner 📈",
-        blurb: "Full-stack real-time earnings analysis tool that scans stocks for EPS beats and misses against Wall Street estimates, with ML-powered anomaly detection.",
+        title: "Robo-Advising Portfolio Optimizer",
+        blurb: "Data-driven portfolio construction engine that builds a market-aligned CAD portfolio using real-time financial data and constraint-based optimization.",
         highlights: [
-            "Developed a real-time scanner comparing consensus Wall Street EPS estimates against reported actuals across 10+ equities.",
-            "Designed a scikit-learn anomaly model flagging earnings surprises that deviate from a company's historical pattern.",
-            "Deployed a full-stack FastAPI and React dashboard surfacing 11 quarters of per-equity earnings surprise data and alerts.",
+            "Screened 50+ equities on currency, liquidity, and market capitalization, resolving cross-listed duplicates by trading volume.",
+            "Filtered the top 25% most volatile names per sector, ranking the rest by correlation to an S&P 500 and TSX benchmark.",
+            "Constructed a $1,000,000 CAD portfolio matching sector weights under 40% and 15% position caps, net of FX and fees.",
         ],
-        github: "https://github.com/aryan29-dev/EPS-Drift-Scanner",
-        demo: "https://eps-drift-scanner.vercel.app/",
-        tech: ["FastAPI", "Python", "pandas", "scikit-learn", "React", "Recharts"],
-        note: "Full-Stack FinTech Project",
+        github: "https://github.com/aryan29-dev/Robo-Advising-Challenge",
+        tech: ["Python", "pandas", "NumPy", "yfinance", "Jupyter Notebook"],
+        note: "CFM 101 Case Competition Winner",
         featured: true,
     },
     {
@@ -33,7 +32,7 @@ const projects: Project[] = [
         blurb: "Interactive web app that stress-tests investment portfolios against major historical crises to quantify downside risk and recovery behavior.",
         highlights: [
             "Engineered a stress-testing framework replaying the 2008 financial crisis, COVID-19, and 2022 interest rate shock scenarios.",
-            "Simulated portfolio performance across US and TSX-listed equities with daily, weekly, or monthly rebalancing.",
+            "Simulated portfolio performance across US and TSX-listed equities with configurable daily, weekly, or monthly rebalancing.",
             "Computed 6 risk metrics including maximum drawdown, Sharpe ratio, volatility, and time-to-recovery over 12–36 months.",
         ],
         github: "https://github.com/aryan29-dev/Market-Crisis-Simulator",
@@ -43,16 +42,30 @@ const projects: Project[] = [
         featured: true,
     },
     {
-        title: "Robo-Advising Portfolio Optimizer",
-        blurb: "Data-driven portfolio construction engine that builds a market-aligned CAD portfolio using real-time financial data and constraint-based optimization.",
+        title: "EPS Drift Scanner",
+        blurb: "Full-stack earnings analysis tool that tracks EPS beats and misses against Wall Street estimates, flagging surprises that are unusual for each company.",
         highlights: [
-            "Screened equities on currency, liquidity, and market capitalization, resolving cross-listed duplicates by trading volume.",
-            "Filtered the top 25% most volatile names per sector, ranking the rest by correlation to an S&P 500 and TSX benchmark.",
-            "Constructed a $1,000,000 CAD portfolio matching sector weights under 40% and 15% position caps, net of FX and fees.",
+            "Developed a real-time scanner comparing consensus Wall Street EPS estimates against reported actuals across 10+ equities.",
+            "Designed a scikit-learn anomaly model flagging earnings surprises that deviate from each company's own historical pattern.",
+            "Deployed a full-stack FastAPI and React dashboard surfacing 11 quarters of per-equity earnings data and threshold alerts.",
         ],
-        github: "https://github.com/aryan29-dev/Robo-Advising-Challenge",
-        tech: ["Python", "pandas", "NumPy", "yfinance", "Jupyter Notebook"],
-        note: "CFM 101 Case Competition Winner",
+        github: "https://github.com/aryan29-dev/EPS-Drift-Scanner",
+        demo: "https://eps-drift-scanner.vercel.app/",
+        tech: ["Python", "FastAPI", "pandas", "scikit-learn", "React", "Recharts"],
+        note: "Full-Stack FinTech Project",
+        featured: true,
+    },
+    {
+        title: "Ontario Education Gap Analysis",
+        blurb: "Power BI report benchmarking Ontario's primary enrolment against national and global averages, built during my term at Focus on Nature.",
+        highlights: [
+            "Benchmarked Ontario's 72.05% primary enrolment rate against Canada's 94.75% average, exposing a 23-point shortfall.",
+            "Analyzed 6 Ontario regions, surfacing a 46-point gap between the strongest and weakest regional primary enrolment rates.",
+            "Automated drill-down across 6 Ontario and 8 world regions using DAX measures and bookmark navigation in one report page.",
+        ],
+        github: "https://youtu.be/Ex_ef8KfgoA",
+        tech: ["Power BI", "DAX"],
+        note: "Data Analytics and Reporting",
         featured: true,
     },
     {
@@ -72,8 +85,8 @@ const projects: Project[] = [
         title: "Portfolio Risk Engine",
         blurb: "Monte Carlo simulation engine for evaluating portfolio risk-return tradeoffs and identifying optimal risk-adjusted allocations.",
         highlights: [
-            "Simulates thousands of randomized portfolio weight combinations to generate return and volatility distributions",
-            "Identifies efficient portfolios (e.g., maximum Sharpe ratio) to compare capital allocation tradeoffs across time horizons",
+            "Simulates thousands of randomized portfolio weight combinations to generate return and volatility distributions.",
+            "Identifies efficient portfolios (maximum Sharpe ratio) to compare capital allocation tradeoffs across time horizons.",
         ],
         github: "https://github.com/aryan29-dev/Portfolio-Risk-Engine",
         tech: ["Python", "pandas", "NumPy", "Matplotlib", "yfinance"],
@@ -81,10 +94,10 @@ const projects: Project[] = [
     },
     {
         title: "Personal Website",
-        blurb: "High-performance portfolio designed to showcase my technical projects, leadership experience, and quantitative finance work.",
+        blurb: "Portfolio site showcasing my projects, experience, and quantitative finance work.",
         highlights: [
-            "Built responsive multi-section components with reusable patterns and a live market ticker",
-            "Optimized navigation flow, visual hierarchy, and deployment pipeline for performance and accessibility",
+            "Built responsive multi-section components with reusable patterns and a live market ticker.",
+            "Optimized navigation flow, visual hierarchy, and deployment pipeline for performance and accessibility.",
         ],
         github: "https://github.com/aryan29-dev/personal-website",
         demo: "https://aryansingh.app/",
@@ -95,8 +108,8 @@ const projects: Project[] = [
         title: "Baller (Basketball Roster Manager)",
         blurb: "Object-oriented Java application modeling a basketball roster system with clean data structures and algorithmic operations.",
         highlights: [
-            "Designed modular class architecture to manage player creation, search, removal, and sorting using ArrayLists",
-            "Implemented core algorithmic operations to reinforce data structure manipulation and time-complexity awareness",
+            "Designed modular class architecture to manage player creation, search, removal, and sorting using ArrayLists.",
+            "Implemented core algorithmic operations to reinforce data structure manipulation and time-complexity awareness.",
         ],
         github: "https://github.com/aryan29-dev/Baller",
         tech: ["Java", "OOP", "ArrayLists"],
@@ -106,8 +119,8 @@ const projects: Project[] = [
         title: "Mini Python Projects",
         blurb: "Collection of foundational Python programs demonstrating core problem-solving and programming fluency.",
         highlights: [
-            "Built multiple standalone implementations covering control flow, data structures, input validation, and algorithmic logic",
-            "Strengthened software fundamentals through iterative development and modular program design",
+            "Built multiple standalone implementations covering control flow, data structures, input validation, and algorithmic logic.",
+            "Strengthened software fundamentals through iterative development and modular program design.",
         ],
         github: "https://github.com/aryan29-dev/Mini-Projects-Python",
         tech: ["Python"],
@@ -120,24 +133,24 @@ export default function Projects() {
     const rest = useMemo(() => projects.filter((p) => !p.featured), []);
 
     return (
-        <section id="projects" ref={fade.ref} className={`py-16 border-t border-stone-200 fade-up ${fade.visible ? "visible" : ""}`}>
-            <p className="text-xs font-bold text-stone-500 tracking-[0.2em] uppercase mb-5">Projects</p>
-            <h2 className="text-4xl sm:text-5xl font-black text-stone-950 tracking-tight leading-tight mb-3">
+        <section id="projects" ref={fade.ref} className={`py-16 border-t border-stone-200 dark:border-white/8 fade-up ${fade.visible ? "visible" : ""}`}>
+            <p className="text-xs font-bold text-stone-500 dark:text-stone-400 tracking-[0.2em] uppercase mb-5">Projects</p>
+            <h2 className="text-4xl sm:text-5xl font-black text-stone-950 dark:text-white tracking-tight leading-tight mb-3">
                 Selected Projects.
             </h2>
-            <p className="max-w-2xl text-base text-stone-700 leading-relaxed mb-8">
+            <p className="max-w-2xl text-base text-stone-700 dark:text-stone-300 leading-relaxed mb-8">
                 A selection of quantitative finance and full-stack projects. All source code is available on GitHub.
             </p>
 
             <div className="grid gap-4">
                 {featured.length > 0 && (
-                    <p className="text-xs text-stone-500 uppercase tracking-widest mb-2">Featured</p>
+                    <p className="text-xs text-stone-500 dark:text-stone-400 uppercase tracking-widest mb-2">Featured</p>
                 )}
                 {featured.map((p) => (
                     <ProjectCard key={p.title} p={p} />
                 ))}
                 {rest.length > 0 && (
-                    <p className="text-xs text-stone-500 uppercase tracking-widest mt-8 mb-2">More Projects</p>
+                    <p className="text-xs text-stone-500 dark:text-stone-400 uppercase tracking-widest mt-8 mb-2">More Projects</p>
                 )}
                 {rest.map((p) => (
                     <ProjectCard key={p.title} p={p} />
@@ -149,6 +162,7 @@ export default function Projects() {
 
 function ProjectCard({ p }: { p: Project }) {
     const isRobo = p.title === "Robo-Advising Portfolio Optimizer";
+    const isVideo = p.github.includes("youtu");
 
     const Note = p.note ? (
         isRobo ? (
@@ -200,8 +214,8 @@ function ProjectCard({ p }: { p: Project }) {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1.5 rounded-xl border border-stone-200 bg-white px-3 py-2 text-xs font-medium text-stone-700 transition hover:border-stone-400"
                     >
-                        <Github className="h-3.5 w-3.5" />
-                        GitHub
+                        {isVideo ? <ExternalLink className="h-3.5 w-3.5" /> : <Github className="h-3.5 w-3.5" />}
+                        {isVideo ? "Video" : "GitHub"}
                     </a>
                 </div>
             </div>
