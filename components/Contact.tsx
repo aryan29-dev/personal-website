@@ -20,7 +20,7 @@ export default function Contact() {
                         <Linkedin className="h-5 w-5 text-stone-400 shrink-0" />
                         <span className="text-sm font-medium text-stone-800">aryan-singh29</span>
                     </a>
-                    <a href="/Aryan_Singh_S26_Resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-2xl border border-stone-200 bg-stone-50 px-5 py-4 text-stone-800 transition hover:border-stone-400 hover:bg-white">
+                    <a href="/Aryan_Singh_Resume_W27.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-2xl border border-stone-200 bg-stone-50 px-5 py-4 text-stone-800 transition hover:border-stone-400 hover:bg-white">
                         <FileText className="h-5 w-5 text-stone-400 shrink-0" />
                         <span className="text-sm font-medium text-stone-800">Resume</span>
                     </a>
