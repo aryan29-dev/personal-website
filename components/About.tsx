@@ -5,8 +5,6 @@ import {
     SiPandas, SiNumpy, SiScikitlearn,
 } from "react-icons/si";
 
-import { FaJava } from "react-icons/fa";
-
 const iconColors: Record<string, string> = {
     Python: "text-[#3776AB]", Java: "text-[#007396]", C: "text-[#A8B9CC]",
     "C++": "text-[#00599C]", JavaScript: "text-[#F7DF1E]", TypeScript: "text-[#3178C6]",
@@ -28,16 +26,18 @@ export default function About() {
                     <h2 className="text-4xl sm:text-5xl font-black text-stone-950 tracking-tight leading-tight mb-6">
                         Building at the intersection of finance and technology.
                     </h2>
-                    <p className="max-w-2xl text-base text-stone-700 leading-relaxed">
-                        Hi! I am Aryan, a first-year Computing and Financial Management student at the University of Waterloo (Co-op).
-                        On my free time, I enjoy building projects at the intersection of finance and technology.
+                    <p className="max-w-2xl text-base text-stone-700 dark:text-stone-300 leading-relaxed">
+                        I am Aryan, a second-year Computing and Financial Management student at the University of Waterloo.
+                        I like building things that turn messy market data into something you can act on.
                     </p>
-                    <p className="mt-3 max-w-2xl text-base text-stone-700 leading-relaxed">
-                        My interest in FinTech started early — introduced to HTML and CSS in middle school, I discovered my passion for coding.
-                        As my skills grew, I began exploring finance, which naturally led me into FinTech.
+                    <p className="mt-3 max-w-2xl text-base text-stone-700 dark:text-stone-300 leading-relaxed">
+                        That has meant a portfolio optimizer that handles FX and transaction costs, a simulator that replays
+                        historical crises against a custom portfolio, and an earnings scanner that flags surprises which are
+                        unusual for a given company.
                     </p>
-                    <p className="mt-3 max-w-2xl text-base text-stone-700 leading-relaxed">
-                        Currently focused on learning new technologies and building data-driven tools. When not coding or studying, you can find me watching basketball or baseball!
+                    <p className="mt-3 max-w-2xl text-base text-stone-700 dark:text-stone-300 leading-relaxed">
+                        Most of what I know comes from building the thing rather than reading about it. When I am not coding
+                        or studying, I am usually watching the Raptors or the Blue Jays!
                     </p>
                 </div>
 
@@ -53,9 +53,9 @@ export default function About() {
                     <div className="rounded-2xl bg-stone-50 border border-stone-200 px-5 py-5">
                         <p className="text-xs text-stone-500 uppercase tracking-widest mb-3">Quick Facts</p>
                         <ul className="space-y-2 text-sm text-stone-700">
-                            <li className="flex items-center gap-2"><span>🏀⚾</span><span>NBA and MLB fan — Raptors and Blue Jays</span></li>
-                            <li className="flex items-center gap-2"><span>💻</span><span>Building FinTech tools at the intersection of markets and code</span></li>
-                            <li className="flex items-center gap-2"><span>📈</span><span>Actively follows equity markets, ETFs, and macro trends</span></li>
+                            <li className="flex items-start gap-2"><span>📊</span><span>Internal Auditor at the CNE, Data Analyst at Focus on Nature</span></li>
+                            <li className="flex items-start gap-2"><span>📈</span><span>Follows equity markets, ETFs, and macro trends</span></li>
+                            <li className="flex items-start gap-2"><span>🏀</span><span>Raptors and Blue Jays Fan</span></li>
                         </ul>
                     </div>
                 </div>
@@ -66,7 +66,6 @@ export default function About() {
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
                     {[
                         { name: "Python", url: "https://www.python.org/", icons: [SiPython] },
-                        { name: "Java", url: "https://www.oracle.com/ca-en/java/", icons: [FaJava] },
                         { name: "C", url: "https://en.cppreference.com/w/c/language.html", icons: [SiC] },
                         { name: "C++", url: "https://isocpp.org/", icons: [SiCplusplus] },
                         { name: "JavaScript", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", icons: [SiJavascript] },

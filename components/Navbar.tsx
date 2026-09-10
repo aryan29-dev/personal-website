@@ -1,6 +1,6 @@
 "use client";
 
-import StockBadge from "./Stocks";
+import Ticker from "./Ticker";
 
 const links = [
   { label: "About", href: "#about" },
@@ -36,11 +36,6 @@ export default function Navbar() {
             </a>
           ))}
         </nav>
-
-        <div className="hidden sm:flex gap-2">
-          <StockBadge symbol="VFV.TO" label="VFV" href="https://finance.yahoo.com/quote/VFV.TO" />
-          <StockBadge symbol="AAPL" label="AAPL" href="https://finance.yahoo.com/quote/AAPL" />
-        </div>
       </div>
 
       <div className="sm:hidden px-5 pb-3 flex justify-between w-full">
@@ -50,6 +45,7 @@ export default function Navbar() {
           </a>
         ))}
       </div>
+      <Ticker />
     </header>
   );
 }
