@@ -1,6 +1,6 @@
 **Aryan Singh — Portfolio**
 
-Personal portfolio showcasing my work across finance, data analytics, and full-stack development. Built to give a quick overview of my experience and projects while providing direct access to the code behind them.
+Personal portfolio showcasing my work across finance, data analytics, and full-stack development. Built to give a quick overview of my experience and projects while providing direct access to the code behind each project.
 
 **Live Site:** [aryansingh.app](https://aryansingh.app)
 
