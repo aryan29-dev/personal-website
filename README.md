@@ -1,10 +1,10 @@
-**Aryan Singh — Portfolio**
+# Aryan Singh — Portfolio
 
 Personal portfolio showcasing my work across finance, data analytics, and full-stack development. Built to give a quick overview of my experience and projects while providing direct access to the code behind each project.
 
 **Live Site:** [aryansingh.app](https://aryansingh.app)
 
-**Features**
+## Features
 
 - **Live market ticker:** Displays 12 U.S. and TSX-listed equities using Yahoo Finance market data, refreshed every 60 seconds. Pauses on hover for easier viewing.
 
@@ -16,7 +16,7 @@ Personal portfolio showcasing my work across finance, data analytics, and full-s
 
 - **Responsive design:** Optimized for mobile, tablet, and desktop layouts.
 
-**Project Structure**
+## Project Structure
 
 ```text
 aryan-singh-website/
@@ -35,7 +35,7 @@ aryan-singh-website/
     └── useFadeIn.ts          # Scroll animation hook
 ```
 
-**Tech Stack**
+## Tech Stack
 
 | Layer | Technology |
 | --- | --- |
@@ -46,7 +46,7 @@ aryan-singh-website/
 | Market Data | Yahoo Finance |
 | Deployment | Vercel |
 
-**Running Locally**
+## Running Locally
 
 ```bash
 git clone https://github.com/aryan29-dev/personal-website.git
